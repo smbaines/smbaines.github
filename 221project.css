@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Style for the Light Red Banner */
+.top-banner {
+  background-color: #ffcccc; /* Light red color */
+  color: #333; /* Dark text for contrast */
+  text-align: center; /* Center the text */
+  padding: 15px 0; /* Vertical padding */
+  font-size: 18px; /* Adjust font size */
+  font-family: Arial, sans-serif; /* Font style */
+  position: relative;
+  width: 100%; /* Ensure it spans across the whole width */
+  z-index: 1000; /* Makes sure the banner stays on top */
+}
+
+/* Optional: Style the text inside the banner */
+.top-banner p {
+  margin: 0; /* Remove default margin from paragraph */
+  font-weight: bold; /* Make the text bold */
+}
+
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+
+.image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 20px 0;
+}
+
+
+.image:nth-child(odd) {
+  float: left;
+  margin-right: 20px;
+}
+
+.image{
+  float: right;
+  margin-left: 20px;
+}
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.intro {
+  background-color: #e0f7fa;
+}
+
+.content {
+  background-color: #ffecb3;
+}
+
+.midsection {
+  background-color: #fff3e0;
+}
+
+.conclusion {
+  background-color: #f3e5f5;
+}
+
+.final {
+  background-color: #e8f5e9;
+}
+
+
+@media (max-width: 768px) {
+  .image {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+  section h2 {
+      font-size: 1.5rem;
+  }
+  section p {
+      font-size: 1rem;
+  }
+}
